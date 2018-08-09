@@ -1,0 +1,4 @@
+src/main/resources/generatorConfig.properties
+src/main/resources/jdbc.properties
+target/classes/generatorConfig.properties
+target/classes/jdbc.properties
