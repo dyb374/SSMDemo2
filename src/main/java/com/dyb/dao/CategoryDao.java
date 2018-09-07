@@ -17,5 +17,6 @@ public interface CategoryDao {
 
     int updateByPrimaryKey(Category record);
     
-    public List<Category> list();
+    List<Category> list();
+   
 }
