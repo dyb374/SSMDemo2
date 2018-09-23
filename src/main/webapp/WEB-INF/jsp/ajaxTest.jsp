@@ -11,7 +11,7 @@
 		$("#useJson").click(function() {
 			$.ajax({
 				type : "POST",
-				url : "http://localhost:8080/SSMDemo2/demo_json",
+				url : "http://127.0.0.1:8080/SSMDemo2/demo_json",
 				data : {
 					name : "Andrew",
 				},
@@ -24,7 +24,7 @@
 					}
 				},
 				error : function(jqXHR) {
-					alert(jqXHR.status);
+					alert("status: " + jqXHR.status);
 				}
 			});
 		});
