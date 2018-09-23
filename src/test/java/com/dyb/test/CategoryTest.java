@@ -5,6 +5,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 import com.dyb.dao.CategoryDao;
 import com.dyb.entity.Category;
@@ -12,7 +13,7 @@ import com.dyb.service.CategoryService;
 
 public class CategoryTest extends BaseTest{
 	private static Logger logger = Logger.getLogger(BookDaoTest.class);
-	@Autowired
+	@Autowired @Qualifier("categoryServiceImpl")
 	CategoryService categoryService;
 	
 	@Autowired
